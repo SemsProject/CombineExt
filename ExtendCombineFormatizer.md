@@ -1,32 +1,32 @@
 Extend the Formatizer to Recognize further Types of Files 
 ==========================================================
 
-The CombineFormatizer maintains a list of recognizers which are able to recognize certain file types, see `List<FormatRecognizer> recognizerList` in /src/main/java/de/unirostock/sems/cbext/Formatizer.java
+The CombineFormatizer maintains a list of recognizers which are able to recognize certain file types, see `List<FormatRecognizer> recognizerList` in `/src/main/java/de/unirostock/sems/cbext/Formatizer.java`
 
 Extending the List of Recognizers 
 ----------------------------------
 
 * to extend the Formatizer you can simply pass another recognizer to the method `Formatizer.addFormatRecognizer (FormatRecognizer recognizer)`
-* every Recognizer needs to extend the `FormatRecognizer` class, see /src/main/java/de/unirostock/sems/cbext/FormatRecognizer.java
-* there are a few recognizers added by default, see /src/main/java/de/unirostock/sems/cbext/recognizer
- * [BioPaxRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/BioPaxRecognizer.java) is able to recognize BioPax files
- * [CellMlRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/CellMlRecognizer.java) is able to recognize CellML files
- * [SbgnRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/SbgnRecognizer.java) is able to recognize SBGN files
- * [SbmlRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/SbmlRecognizer.java) is able to recognize SBML files
- * [SbolRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/SbolRecognizer.java) is able to recognize SBOL files
- * [SedMlRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/SedMlRecognizer.java) is able to recognize SED-ML files
- * [DefaultRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/DefaultRecognizer.java) is a fallback to recognize files by there mime type or extension
+* every Recognizer needs to extend the `FormatRecognizer` class, see `/src/main/java/de/unirostock/sems/cbext/FormatRecognizer.java`
+* there are a few recognizers added by default, see `/src/main/java/de/unirostock/sems/cbext/recognizer`
+  * [BioPaxRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/BioPaxRecognizer.java) is able to recognize BioPax files
+  * [CellMlRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/CellMlRecognizer.java) is able to recognize CellML files
+  * [SbgnRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/SbgnRecognizer.java) is able to recognize SBGN files
+  * [SbmlRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/SbmlRecognizer.java) is able to recognize SBML files
+  * [SbolRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/SbolRecognizer.java) is able to recognize SBOL files
+  * [SedMlRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/SedMlRecognizer.java) is able to recognize SED-ML files
+  * [DefaultRecognizer](https://github.com/SemsProject/CombineExt/blob/master/src/main/java/de/unirostock/sems/cbext/recognizer/DefaultRecognizer.java) is a fallback to recognize files by there mime type or extension
 * every recognizer has a **priority**
 * the default reconizer has a priority of 100:
- * if you want your recognizer to be asked first give it a higher priority
- * the priorities of recognizers shipped with this library 
- * you can change the priority of a recognizer, for example if you know that there are mainly SBML files in your project:
-  * `SbmlRecognizer.priority = 200`
-  * afterwards you **must** resort the recognizers of the Formatizer using `Formatizer.resortRecognizers ()`
+  * if you want your recognizer to be asked first give it a higher priority
+  * the priorities of recognizers shipped with this library 
+  * you can change the priority of a recognizer, for example if you know that there are mainly SBML files in your project:
+    * `SbmlRecognizer.priority = 200`
+    * afterwards you **must** resort the recognizers of the Formatizer using `Formatizer.resortRecognizers ()`
 * you can remove all recognizers using `Formatizer.removeRecognizers ()`
 * you can add all default recognizers using `Formatizer.addDefaultRecognizers ()`
 
-Extending the !FormatRecognizer class 
+Extending the FormatRecognizer class 
 --------------------------------------
 
 The abstract class has 4 functions that you need to implement:
