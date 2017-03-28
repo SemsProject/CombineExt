@@ -11,12 +11,12 @@ About Icons
 
 The [icons](https://github.com/SemsProject/CombineExt/tree/master/src/main/resources/icons) are mainly taken from [fatcow](http://www.fatcow.com/free-icons). We extended the pack with the following icons to represent files related to COMBINE standards:
 
-![SED-ML](https://github.com/SemsProject/CombineExt/blob/master/src/main/resources/icons/Blue-sedml.png)
-![Combine](https://github.com/SemsProject/CombineExt/blob/master/src/main/resources/icons/Green-combine.png)
-![CellMl](https://github.com/SemsProject/CombineExt/blob/master/src/main/resources/icons/Red-cellml.png)
-![SBGN](https://github.com/SemsProject/CombineExt/blob/master/src/main/resources/icons/Blue-sbgn.png)
-![SBML](https://github.com/SemsProject/CombineExt/blob/master/src/main/resources/icons/Blue-sbml.png)
-![Unknown](https://github.com/SemsProject/CombineExt/blob/master/src/main/resources/icons/Blue-unknown.png)
+![SED-ML](https://github.com/SemsProject/CombineExt/raw/master/src/main/resources/icons/Blue-sedml.png)
+![Combine](https://github.com/SemsProject/CombineExt/raw/master/src/main/resources/icons/Green-combine.png)
+![CellMl](https://github.com/SemsProject/CombineExt/raw/master/src/main/resources/icons/Red-cellml.png)
+![SBGN](https://github.com/SemsProject/CombineExt/raw/master/src/main/resources/icons/Blue-sbgn.png)
+![SBML](https://github.com/SemsProject/CombineExt/raw/master/src/main/resources/icons/Blue-sbml.png)
+![Unknown](https://github.com/SemsProject/CombineExt/raw/master/src/main/resources/icons/Blue-unknown.png)
 
 All Icons are licensed under Creative Commons Attribution 3.0 License.
 
