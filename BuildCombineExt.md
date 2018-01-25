@@ -4,7 +4,7 @@ Build CombineExt
 When you've cloned the source code:
 
 ```sh
-git clone git://sems.uni-rostock.de/combine-ext
+git clone https://github.com/SemsProject/CombineExt
 ```
 
 There are two supported options to build this project:

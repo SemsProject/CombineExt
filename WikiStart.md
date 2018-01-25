@@ -17,15 +17,17 @@ Download and Use
 -----------------
 
 * Binaries are available from our binary repository, or see [build instructions](BuildCombineExt)
-* include the project via Maven: ([find latest version id](https://github.com/SemsProject/maven-repository/tree/releases/de/unirostock/sems/CombineExt), import the [SEMS Maven repository](https://sems.uni-rostock.de/2013/10/maven-repository/))
+* include the project via Maven:
 
 ```xml
 <dependency>
-    <groupId>de.unirostock.sems</groupId>
+    <groupId>de.uni-rostock.sbi</groupId>
     <artifactId>CombineExt</artifactId>
     <version>$VERSION</version>
 </dependency>
 ```
+
+ ([find latest version on Maven Central](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22de.uni-rostock.sbi%22%20AND%20a%3A%22CombineExt%22)
 
 * see above (parts of this project) to learn how to use this package
 

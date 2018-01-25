@@ -1,15 +1,15 @@
 Extend the Iconizer to provide icons for further Formats 
 =========================================================
 
-The CombineIconizer maintains a list of icon collections which provide icons for certain file formatas, see `List<IconCollection> iconCollectionsList` in `/src/main/java/de/unirostock/sems/cbext/Iconizer.java`
+The CombineIconizer maintains a list of icon collections which provide icons for certain file formatas, see `List<IconCollection> iconCollectionsList` in [`/src/main/java/de/unirostock/sems/cbext/Iconizer.java`](https://github.com/SemsProject/CombineExt/tree/master/src/main/java/de/unirostock/sems/cbext/Iconizer.java)
 
 
 Extending the List of Icon Collections 
 ---------------------------------------
 
 * to extend the Iconizer you can simply pass another recognizer to the method `Iconizer.addIconCollection (IconCollection collection)`
-* every icon collection needs to extend the `IconCollection` class, see /src/main/java/de/unirostock/sems/cbext/IconCollection.java
-* there is a default icon collection, see `/src/main/java/de/unirostock/sems/cbext/collections/DefaultIconCollection.java`
+* every icon collection needs to extend the `IconCollection` class, see [`/src/main/java/de/unirostock/sems/cbext/IconCollection.java`](https://github.com/SemsProject/CombineExt/tree/master/src/main/java/de/unirostock/sems/cbext/IconCollection.java)
+* there is a default icon collection, see [`/src/main/java/de/unirostock/sems/cbext/collections/DefaultIconCollection.java`](https://github.com/SemsProject/CombineExt/tree/master/src/main/java/de/unirostock/sems/cbext/collections/DefaultIconCollection.java)
 * every icon collection has a **priority**
 * the default icon collection has a priority of 100:
   * if you want your icon collection to be asked first give it a higher priority
